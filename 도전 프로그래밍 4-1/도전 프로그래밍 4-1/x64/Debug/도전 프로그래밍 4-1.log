@@ -1,0 +1,8 @@
+﻿  main.c
+C:\Users\baeja\source\repos\도전 프로그래밍 4-1\도전 프로그래밍 4-1\main.c(14,23): warning C4047: '함수': 'char *'의 간접 참조 수준이 'char *[99]'과(와) 다릅니다.
+C:\Users\baeja\source\repos\도전 프로그래밍 4-1\도전 프로그래밍 4-1\main.c(14,17): warning C4024: 'fgets': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\Users\baeja\source\repos\도전 프로그래밍 4-1\도전 프로그래밍 4-1\main.c(16,24): warning C4047: '함수': 'char *'의 간접 참조 수준이 'char *[99]'과(와) 다릅니다.
+C:\Users\baeja\source\repos\도전 프로그래밍 4-1\도전 프로그래밍 4-1\main.c(16,17): warning C4024: 'fgets': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+C:\Users\baeja\source\repos\도전 프로그래밍 4-1\도전 프로그래밍 4-1\main.c(26,10): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char **'입니다.
+C:\Users\baeja\source\repos\도전 프로그래밍 4-1\도전 프로그래밍 4-1\main.c(27,10): warning C4477: 'printf' : 서식 문자열 '%s'에 'char *' 형식의 인수가 필요하지만 variadic 인수 1의 형식이 'char **'입니다.
+  도전 프로그래밍 4-1.vcxproj -> C:\Users\baeja\source\repos\도전 프로그래밍 4-1\x64\Debug\도전 프로그래밍 4-1.exe

@@ -1,0 +1,4 @@
+﻿  comp.c
+C:\Users\baeja\source\repos\challenge4-5\challenge4-5\comp.c(10,10): warning C4101: 's2' :참조되지 않은 지역 변수입니다.
+C:\Users\baeja\source\repos\challenge4-5\challenge4-5\comp.c(10,6): warning C4101: 's1' :참조되지 않은 지역 변수입니다.
+  challenge4-5.vcxproj -> C:\Users\baeja\source\repos\challenge4-5\x64\Debug\challenge4-5.exe

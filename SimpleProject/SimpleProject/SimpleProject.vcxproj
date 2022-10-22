@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{a19033ed-a9cb-452d-b382-339e0d5c7222}</ProjectGuid>
+    <RootNamespace>SimpleProject</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="02-1-1.c" />
+    <ClCompile Include="02-1-2.c" />
+    <ClCompile Include="02-2-1.c" />
+    <ClCompile Include="02-2-2.c" />
+    <ClCompile Include="03-1-1.c" />
+    <ClCompile Include="03-1-2.c" />
+    <ClCompile Include="03-1-3.c" />
+    <ClCompile Include="03-1-4.c" />
+    <ClCompile Include="03-1-5.c" />
+    <ClCompile Include="04-4-1.c" />
+    <ClCompile Include="04-4-2.c" />
+    <ClCompile Include="05-1-1.c" />
+    <ClCompile Include="05-1-2.c" />
+    <ClCompile Include="05-1-3.c" />
+    <ClCompile Include="05-1-4.c" />
+    <ClCompile Include="05-1-5.c" />
+    <ClCompile Include="07-1-1.c" />
+    <ClCompile Include="07-1-2.c" />
+    <ClCompile Include="07-1-3.c" />
+    <ClCompile Include="07-1-4.c" />
+    <ClCompile Include="07-1-5.c" />
+    <ClCompile Include="07-2-1.c" />
+    <ClCompile Include="07-2-2.c" />
+    <ClCompile Include="07-3-1.c" />
+    <ClCompile Include="07-3-2.c" />
+    <ClCompile Include="07-3-3.c" />
+    <ClCompile Include="07-4-1.c" />
+    <ClCompile Include="07-4-2.c" />
+    <ClCompile Include="08-03.c" />
+    <ClCompile Include="08-1-1.c" />
+    <ClCompile Include="08-1-2.c" />
+    <ClCompile Include="08-1-3.c" />
+    <ClCompile Include="08-2-1.c" />
+    <ClCompile Include="08-2-2.c" />
+    <ClCompile Include="09-1-1.c" />
+    <ClCompile Include="09-1-2.c" />
+    <ClCompile Include="09-1-3-answer.c" />
+    <ClCompile Include="09-1-3.c" />
+    <ClCompile Include="09-2.c" />
+    <ClCompile Include="11-1-1.c" />
+    <ClCompile Include="11-1-2.c" />
+    <ClCompile Include="11-2-1.c" />
+    <ClCompile Include="11-2-2.c" />
+    <ClCompile Include="11-2-3.c" />
+    <ClCompile Include="12-1-1.c" />
+    <ClCompile Include="12-1-2.c" />
+    <ClCompile Include="13-1-1.c" />
+    <ClCompile Include="13-1-2.c" />
+    <ClCompile Include="13-1-3.c" />
+    <ClCompile Include="13-1-4.c" />
+    <ClCompile Include="14-1-1.c" />
+    <ClCompile Include="14-1-2.c" />
+    <ClCompile Include="14-2-1.c" />
+    <ClCompile Include="14-2-2.c" />
+    <ClCompile Include="16-1-1.c" />
+    <ClCompile Include="16-1-2.c" />
+    <ClCompile Include="16-1-3.c" />
+    <ClCompile Include="17-1.c" />
+    <ClCompile Include="18-1-1.c" />
+    <ClCompile Include="18-1-2.c" />
+    <ClCompile Include="18-1-3.c" />
+    <ClCompile Include="18-1-5.c" />
+    <ClCompile Include="18-1.4.c" />
+    <ClCompile Include="21-1.c" />
+    <ClCompile Include="21-2-1.c" />
+    <ClCompile Include="21-2-2.c" />
+    <ClCompile Include="21-2-3.c" />
+    <ClCompile Include="22-1.c" />
+    <ClCompile Include="22-2.c" />
+    <ClCompile Include="23-1.c" />
+    <ClCompile Include="23-2.c" />
+    <ClCompile Include="24-1-1.c" />
+    <ClCompile Include="24-1-2.c" />
+    <ClCompile Include="24-1-3.c" />
+    <ClCompile Include="24-2.c" />
+    <ClCompile Include="25-2-1.c" />
+    <ClCompile Include="25-2-2.c" />
+    <ClCompile Include="26-1-1.c" />
+    <ClCompile Include="26-1-2.c" />
+    <ClCompile Include="26-1-3.c" />
+    <ClCompile Include="2DArrAccessType.c" />
+    <ClCompile Include="2DArrayAddress.c" />
+    <ClCompile Include="2DArrNameAndArrPtr.c" />
+    <ClCompile Include="2DArrParam.c" />
+    <ClCompile Include="2DArrPointerOp.c" />
+    <ClCompile Include="AbsoCompare.c" />
+    <ClCompile Include="AddToNum.c" />
+    <ClCompile Include="AdvanEnglishSchool.c" />
+    <ClCompile Include="AnotherLocalVal.c" />
+    <ClCompile Include="ArgcArgv.c" />
+    <ClCompile Include="ArgvEndNULL.c" />
+    <ClCompile Include="ArgvParamType.c" />
+    <ClCompile Include="ArrayAccess.c" />
+    <ClCompile Include="ArrayInit.c" />
+    <ClCompile Include="ArrayNameIsPointer.c" />
+    <ClCompile Include="ArrayNamePointerOperation.c" />
+    <ClCompile Include="ArrayNameType.c" />
+    <ClCompile Include="ArrayParam.c" />
+    <ClCompile Include="ArrayParamAccess.c" />
+    <ClCompile Include="ArrayString.c" />
+    <ClCompile Include="ArrPtrAndPtrArr.c" />
+    <ClCompile Include="AutoConvOne.c" />
+    <ClCompile Include="BinaryFileCopy.c" />
+    <ClCompile Include="BitAndOperation.c" />
+    <ClCompile Include="BitLeftShift.c" />
+    <ClCompile Include="BitNotOperation.c" />
+    <ClCompile Include="BitOrOperation.c" />
+    <ClCompile Include="BitRightShift.c" />
+    <ClCompile Include="BitXorOperation.c" />
+    <ClCompile Include="CallByRefSwap.c" />
+    <ClCompile Include="CallByValueSwap.c" />
+    <ClCompile Include="CalOne.c" />
+    <ClCompile Include="CalTwo.c" />
+    <ClCompile Include="Challenge1-1.c" />
+    <ClCompile Include="Challenge1-2.c" />
+    <ClCompile Include="Challenge1-3.c" />
+    <ClCompile Include="Challenge1-4.c" />
+    <ClCompile Include="Challenge1-5.c" />
+    <ClCompile Include="Challenge1-6.c" />
+    <ClCompile Include="Challenge1-7.c" />
+    <ClCompile Include="Challenge1-8.c" />
+    <ClCompile Include="Challenge2-1.c" />
+    <ClCompile Include="Challenge2-2.c" />
+    <ClCompile Include="Challenge2-3.c" />
+    <ClCompile Include="Challenge2-4.c" />
+    <ClCompile Include="Challenge2-5.c" />
+    <ClCompile Include="Challenge3-1.c" />
+    <ClCompile Include="Challenge3-2.c" />
+    <ClCompile Include="Challenge3-3.c" />
+    <ClCompile Include="Challenge3-5.c" />
+    <ClCompile Include="Challenge3-6.c" />
+    <ClCompile Include="CharShortBaseAdd.c" />
+    <ClCompile Include="CircleArea.c" />
+    <ClCompile Include="CircleIncludePoint.c" />
+    <ClCompile Include="CommaOp.c" />
+    <ClCompile Include="ComplexFileRead.c" />
+    <ClCompile Include="ComplexFileWrite.c" />
+    <ClCompile Include="ConsoleEOF.c" />
+    <ClCompile Include="ConvDiv.c" />
+    <ClCompile Include="ConvStringToPrimitive.c" />
+    <ClCompile Include="DoublePointerAccess.c" />
+    <ClCompile Include="DynamicMemoryAllocation.c" />
+    <ClCompile Include="elif_endif.c" />
+    <ClCompile Include="else_endif.c" />
+    <ClCompile Include="EnglishSchool.c" />
+    <ClCompile Include="EnumTypeTone.c" />
+    <ClCompile Include="ExcepMul2Mul3.c" />
+    <ClCompile Include="FieldWidth.c" />
+    <ClCompile Include="FirstFileRead.c" />
+    <ClCompile Include="FirstFileWrite.c" />
+    <ClCompile Include="FloatError.c" />
+    <ClCompile Include="FormPrintf.c" />
+    <ClCompile Include="FunctionPointer.c" />
+    <ClCompile Include="GlobalVariable.c" />
+    <ClCompile Include="GoToBasic.c" />
+    <ClCompile Include="Hello.c" />
+    <ClCompile Include="HelloComment.c" />
+    <ClCompile Include="HowChar.c" />
+    <ClCompile Include="IfBasic.c" />
+    <ClCompile Include="ifdef_endif.c" />
+    <ClCompile Include="IfElseBasic.c" />
+    <ClCompile Include="if_endif.c" />
+    <ClCompile Include="InitStructArray.c" />
+    <ClCompile Include="InitStructVal.c" />
+    <ClCompile Include="InputBufFlush.c" />
+    <ClCompile Include="LiteralSize.c" />
+    <ClCompile Include="LocalValHideGlobalVal.c" />
+    <ClCompile Include="LocalValHideVal.c" />
+    <ClCompile Include="LocalVariable.c" />
+    <ClCompile Include="MacroConst.c" />
+    <ClCompile Include="MacroFunction.c" />
+    <ClCompile Include="MacroOpToString.c" />
+    <ClCompile Include="MacroUseMacro.c" />
+    <ClCompile Include="MoveFileReWrPos.c" />
+    <ClCompile Include="Mul3Mul4.c" />
+    <ClCompile Include="NeedInputBufFlush.c" />
+    <ClCompile Include="NineNineDan.c" />
+    <ClCompile Include="Notation.c" />
+    <ClCompile Include="NumCompare.c" />
+    <ClCompile Include="OctHex.c" />
+    <ClCompile Include="OperatorFive.c" />
+    <ClCompile Include="OperatorFour.c" />
+    <ClCompile Include="OperatorOne.c" />
+    <ClCompile Include="OperatorSeven.c" />
+    <ClCompile Include="OperatorSix.c" />
+    <ClCompile Include="OperatorThree.c" />
+    <ClCompile Include="OperatorTwo.c" />
+    <ClCompile Include="PointerArray.c" />
+    <ClCompile Include="PointerArrayType.c" />
+    <ClCompile Include="PointerBaseArrayAccess.c" />
+    <ClCompile Include="PointerOperation.c" />
+    <ClCompile Include="PointerOperationResult.c" />
+    <ClCompile Include="PointerSwapFail.c" />
+    <ClCompile Include="PointerSwapSuccess.c" />
+    <ClCompile Include="PointRelation.c" />
+    <ClCompile Include="PopuResarch.c" />
+    <ClCompile Include="PrintfOne.c" />
+    <ClCompile Include="PrintfOutput.c" />
+    <ClCompile Include="PrintfTwo.c" />
+    <ClCompile Include="RandomNum.c" />
+    <ClCompile Include="ReadString.c" />
+    <ClCompile Include="ReadStringFault1.c" />
+    <ClCompile Include="ReadStringFault2.c" />
+    <ClCompile Include="ReadStringRight.c" />
+    <ClCompile Include="ReadString_page426.c" />
+    <ClCompile Include="ReadWriteChar.c" />
+    <ClCompile Include="RealMean.c" />
+    <ClCompile Include="RealNumOutput.c" />
+    <ClCompile Include="RecursiveFactorial.c" />
+    <ClCompile Include="RecursiveFunc.c" />
+    <ClCompile Include="RemoveBSN.c" />
+    <ClCompile Include="ScanfConvOne.c" />
+    <ClCompile Include="ScanfConvTwo.c" />
+    <ClCompile Include="SeedRandomNum.c" />
+    <ClCompile Include="SimpleAddFor.c" />
+    <ClCompile Include="SimpleAddFunc.c" />
+    <ClCompile Include="SimpleAddOne.c" />
+    <ClCompile Include="SimpleAddThree.c" />
+    <ClCompile Include="SimpleAddTwo.c" />
+    <ClCompile Include="SimpleOneFile.c" />
+    <ClCompile Include="SimpleWhile.c" />
+    <ClCompile Include="SizeOfOperator.c" />
+    <ClCompile Include="SmartAddFunc.c" />
+    <ClCompile Include="StartEndString.c" />
+    <ClCompile Include="StaticLocalVariable.c" />
+    <ClCompile Include="StringArray.c" />
+    <ClCompile Include="StringCompCase.c" />
+    <ClCompile Include="StringConcatCase.c" />
+    <ClCompile Include="StringCopyCase.c" />
+    <ClCompile Include="StringPrintf.c" />
+    <ClCompile Include="StructAddMin.c" />
+    <ClCompile Include="StructArray.c" />
+    <ClCompile Include="StructFileWriteRead.c" />
+    <ClCompile Include="StructFunctionCallByRef.c" />
+    <ClCompile Include="StructImportant.c" />
+    <ClCompile Include="StructMemArrCopy.c" />
+    <ClCompile Include="StructOperation.c" />
+    <ClCompile Include="StructPointer.c" />
+    <ClCompile Include="StructPointerMem.c" />
+    <ClCompile Include="StructTypedef.c" />
+    <ClCompile Include="StructValAddress.c" />
+    <ClCompile Include="StructValAndFunction.c" />
+    <ClCompile Include="TelephoneInfo.c" />
+    <ClCompile Include="TellFileReWrPos.c" />
+    <ClCompile Include="TextCharFileCopy.c" />
+    <ClCompile Include="TextDataFileRead.c" />
+    <ClCompile Include="TextDataFileWrite.c" />
+    <ClCompile Include="TextStringFileCopy.c" />
+    <ClCompile Include="ThreeDimArrayAccess.c" />
+    <ClCompile Include="ThreeDimArraySize.c" />
+    <ClCompile Include="ThreeOperand.c" />
+    <ClCompile Include="TimeSeedRandomNum.c" />
+    <ClCompile Include="TriplePointer.c" />
+    <ClCompile Include="TwoDimArrayAddr.c" />
+    <ClCompile Include="TwoDimArrayInit.c" />
+    <ClCompile Include="TwoDimArraySize.c" />
+    <ClCompile Include="TwoPointDistance.c" />
+    <ClCompile Include="TwoStringType.c" />
+    <ClCompile Include="TwoToNine.c" />
+    <ClCompile Include="TwoToNineForVer.c" />
+    <ClCompile Include="TypeNameTypedef.c" />
+    <ClCompile Include="UnionMemAlloc.c" />
+    <ClCompile Include="UnionValAccess.c" />
+    <ClCompile Include="UnivStdNum.c" />
+    <ClCompile Include="UsefulDoWhile.c" />
+    <ClCompile Include="UsefulFunctionPointer.c" />
+    <ClCompile Include="UsefulUnionAccess.c" />
+    <ClCompile Include="UsingPG.c" />
+    <ClCompile Include="UsingPS.c" />
+    <ClCompile Include="VarDeclAndlnit.c" />
+    <ClCompile Include="VoidTypePointer.c" />
+    <ClCompile Include="WhenOver5000.c" />
+    <ClCompile Include="WriteString.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
